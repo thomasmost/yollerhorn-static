@@ -31,11 +31,11 @@ const Home: NextPage = () => {
         </p>
         <p className={styles.description}>
           We envisioned a sort of IBDB for downtown theater, an event network
-          for plays put on for one night only in someone's backyard in Bushwick,
+          for plays put on for one night only in someone&apos;s backyard in Bushwick,
           for new works and new performers. It was pretty cool.
         </p>
         <p className={styles.description}>
-          We're working on other projects now, and they're pretty cool too.
+          We&apos;re working on other projects now, and they&apos;re pretty cool too.
         </p>
         <div className={styles.grid}>
           <a href="https://bend.green" className={styles.card}>
