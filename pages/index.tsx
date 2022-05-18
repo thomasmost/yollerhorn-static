@@ -1,7 +1,17 @@
+import styled from '@emotion/styled';
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+
+import Logo from './yollerhorn.svg';
+
+const StyledLogo = styled(Logo)`
+
+    * {
+      fill: #ffdd33;
+    }
+`;
+
 
 const Home: NextPage = () => {
   return (
@@ -13,57 +23,54 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
+          <div className={styles.logo}>
+            <StyledLogo width={72} height={72} />
+          </div>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Yollerhorn
         </h1>
-
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.tsx</code>
+          Yollerhorn was a website started by Darren Caulley and Thomas Constantine Moore in 2014.
         </p>
-
+        <p className={styles.description}>
+          We envisioned a sort of IBDB for downtown theater,
+          an event network for plays put on for one night only in someone's backyard in Bushwick,
+          for new works and new performers.
+          It was pretty cool.
+        </p>
+        <p className={styles.description}>
+          We're working on other projects now, and they're pretty cool too.
+        </p>
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a href="https://bend.green" className={styles.card}>
+            <h2>Bend &rarr;</h2>
+            <p>One-click carbon assessments</p>
           </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
+          <a href="https://network.demandstar.com/" className={styles.card}>
+            <h2>DemandStar &rarr;</h2>
+            <p>Deliver higher-quality projects for less</p>
           </a>
         </div>
       </main>
 
       <footer className={styles.footer}>
+        <div>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://github.com/thomasmost"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
+          Thomas
         </a>
+
+        <a
+          href="https://www.linkedin.com/in/darrencaulley/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Darren
+        </a>
+        </div>
       </footer>
     </div>
   )
